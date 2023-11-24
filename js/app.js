@@ -333,7 +333,7 @@ function searchProduct(value) {
 
 window.onload = ()=>{
     scroll({
-        top:0,
+        top:1,
     })
 }
 
