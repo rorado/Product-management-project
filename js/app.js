@@ -35,7 +35,7 @@ myInputs.forEach(input => {
 
 
 
-//                     ==== Data Management ====
+//         == Data Management ==
 
 let data;
 const jsonData = localStorage.getItem("product");
@@ -47,7 +47,7 @@ if (jsonData) {
 }
 
 
-//           == Determine the total  ==
+//           == Determine the total ==
 
 function getTotale(){
     if (price.value != "" && price.value != 0) {
@@ -93,7 +93,7 @@ form.addEventListener('submit',function(event){
 
 
 
-// == Save Products in localStorage ==
+//    == Save Products in localStorage ==
 function datapro() {
 
     let value_total = (+price.value ) + ((+taxes.value + +ads.value ) / +reductions.value);
@@ -119,7 +119,7 @@ function datapro() {
             data.push(nep); 
         }   
     }else{
-        data[assistant]=nep
+        data[assistant]=nep;
         mood = 'create'
         create.value = 'Create';
         qty.disabled = false;
@@ -180,7 +180,7 @@ totalProduct()
 
 
 
-// == Show the throw button ==
+// == Show the delete button ==
 function btnDe(){  
 let btnD = document.getElementById("btnDelet");
 if (data.length > 0) {
