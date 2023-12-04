@@ -86,7 +86,7 @@ form.addEventListener('submit',function(event){
     total.innerHTML = "Total";
     total.style.backgroundColor = "red";
     let search = document.getElementById('search');
-    search.value =''
+    search.value ='';
 });
 
 
@@ -190,7 +190,7 @@ if (data.length > 0) {
     btnD.innerHTML = ""
 } 
 }
-btnDe()
+btnDe();
 
 
 
